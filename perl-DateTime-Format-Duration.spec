@@ -15,7 +15,6 @@ Source:		http://www.cpan.org/modules/by-module/DateTime/%{module}-%{version}.tar
 Buildrequires:	perl-devel
 %endif
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module formats and parses DateTime::Duration objects as well as other
