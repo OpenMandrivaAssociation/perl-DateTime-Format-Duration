@@ -1,7 +1,7 @@
 %define module	DateTime-Format-Duration
 %define name	perl-%{module}
-%define version 1.02
-%define release %mkrel 6
+%define version 1.03
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -10,7 +10,7 @@ Summary:	Format and parse DateTime::Durations
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/DateTime/%{module}-%{version}.tar.bz2
+Source:		http://www.cpan.org/modules/by-module/DateTime/%{module}-%{version}.tar.gz
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
