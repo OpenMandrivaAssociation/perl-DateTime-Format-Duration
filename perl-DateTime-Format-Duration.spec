@@ -14,6 +14,9 @@ Source0:	http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstr
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
+Buildrequires: perl(DateTime)
+Buildrequires: perl(DateTime::Duration)
+
 Buildarch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
