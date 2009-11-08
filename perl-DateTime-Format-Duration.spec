@@ -1,5 +1,5 @@
 %define upstream_name	 DateTime-Format-Duration
-%define upstream_version 1.03
+%define upstream_version 1.03a
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -22,7 +22,7 @@ This module formats and parses DateTime::Duration objects as well as other
 durations representations.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-1.03
 # fix perms
 chmod 644 LICENSE README Changes
 
@@ -30,12 +30,12 @@ chmod 644 LICENSE README Changes
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
+%check
+%make test
+
 %install
 rm -rf %{buildroot}
 %makeinstall_std
-
-%check
-#%make test
 
 %clean 
 rm -rf %{buildroot}
