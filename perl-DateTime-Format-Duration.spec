@@ -8,7 +8,7 @@ Release:	5
 Summary:	Format and parse DateTime::Durations 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
+URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstream_version}.tgz
 
 BuildRequires:	perl-devel
