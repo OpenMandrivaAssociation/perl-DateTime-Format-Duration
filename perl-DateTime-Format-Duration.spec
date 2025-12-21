@@ -11,6 +11,7 @@ Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstream_version}.tgz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(DateTime)
 BuildRequires:	perl(DateTime::Duration)
