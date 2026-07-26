@@ -1,15 +1,13 @@
 %define upstream_name	 DateTime-Format-Duration
-%define upstream_version 1.06
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.06
+Release:	2
 
 Summary:	Format and parse DateTime::Durations 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://github.com/karenetheridge/DateTime-Format-Duration
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/DateTime-Format-Duration-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/DateTime-Format-Duration-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -59,8 +57,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 1.30.0-1mdv2010.0
 + Revision: 395153
 - update to 1.03 for real this time
-- using %%perl_convert_version
-- fixed license field
+- using %1.06 fixed license field
 - update to 1.03
 
 * Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.02-6mdv2009.0
